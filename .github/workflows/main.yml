@@ -2,6 +2,8 @@ name: Update passcode image
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '30 23 * * *'
     
 jobs:
   build:
