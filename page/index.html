@@ -134,8 +134,8 @@
                     <option value='north'>北门</option>
                     <option value='south'>南门</option>
                 </select></label><br>
-            <label for="name">姓名：<input type="text" id="name" name="name" placeholder="杰森"></label><br>
-            <label for="college">学院：<input type="text" id="college" name="college" placeholder="电气信息学院"></label><br>
+            <label for="name">姓名：<input type="text" id="name" name="name" placeholder="李昊"></label><br>
+            <label for="college">学院：<input type="text" id="college" name="college" placeholder="外国语与国际关系学院"></label><br>
             <div style="text-align: center;"><button type="submit">生成通行码</button></div>
         </form>
         <div style="width:0;height:0;display: none;">
@@ -193,8 +193,8 @@
             event.preventDefault();
             let name = document.getElementById("name").value;
             let college = document.getElementById("college").value;
-            name = name ? name : "杰森";
-            college = college ? college : "电气信息学院";
+            name = name ? name : "李昊";
+            college = college ? college : ""外国语与国际关系学院
             document.getElementById("college_and_name").innerHTML = college + "." + name;
             if (isCodeExpired) alert("通行码图片已过期，需要更新！");
             generate_passcode();
